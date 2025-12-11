@@ -48,7 +48,7 @@ face_system = None
 async def startup_event():
     global face_system
     logger.info("🚀 Loading face recognition model...")
-    face_system = FaceRecognitionSystem(det_size=(640, 640), similarity_threshold=0.4)
+    face_system = FaceRecognitionSystem(det_size=(640, 640), similarity_threshold=0.5)
     logger.info("✅ Model loaded successfully")
 
 
