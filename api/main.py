@@ -117,7 +117,7 @@ async def recognize_face_simple(file: UploadFile = File(...)):
         return {"success": False, "message": "Tidak ada wajah terdeteksi"}
 
     embeddings = face_system.load_all_embeddings(str(EMBEDDINGS_DIR))
-    logger.info(f"📚 Loaded embeddings: {list(embeddings.keys())}")
+    # logger.info(f"📚 Loaded embeddings: {list(embeddings.keys())}")
 
     match = face_system.find_matching_face(result["embedding"], embeddings)
 
