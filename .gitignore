@@ -23,10 +23,10 @@ ENV/
 .env.local
 
 # Data directories
-data/faces/*
-data/embeddings/*
-!data/faces/.gitkeep
-!data/embeddings/.gitkeep
+#data/faces/*
+#data/embeddings/*
+#!data/faces/.gitkeep
+#!data/embeddings/.gitkeep
 
 # Model cache
 .insightface/
