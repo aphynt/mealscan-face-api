@@ -46,9 +46,9 @@ Thumbs.db
 *.ipynb_checkpoints
 
 # Test files
-#test_*.jpg
-#test_*.png
-#*.jpg
-#*.png
-#!docs/*.jpg
-#!docs/*.png
+test_*.jpg
+test_*.png
+*.jpg
+*.png
+!docs/*.jpg
+!docs/*.png
