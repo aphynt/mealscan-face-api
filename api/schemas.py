@@ -82,6 +82,8 @@ class FaceRegistrationResponse(BaseModel):
     employee_id: str
     confidence: float
     bbox: List[float]
+    is_real_face: Optional[bool] = None
+    anti_spoofing_score: Optional[float] = None
 
 
 class FaceRecognitionResponse(BaseModel):
@@ -95,6 +97,8 @@ class FaceRecognitionResponse(BaseModel):
     can_attend: bool = False
     meal_type: Optional[MealType] = None
     attendance_id: Optional[int] = None
+    is_real_face: Optional[bool] = None
+    anti_spoofing_score: Optional[float] = None
 
 
 class MealTimeSettingBase(BaseModel):
